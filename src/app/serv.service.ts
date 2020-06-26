@@ -10,6 +10,7 @@ export class ServService {
 
   constructor(private http: HttpClient) { }
 
+  
 
   getQueryWiki(data: string): Observable<any[]> {
     return this.http.get<any[]>(`${data}`);
